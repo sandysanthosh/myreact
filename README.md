@@ -2,7 +2,7 @@
 
 ### MY First ReactApp in VS CODE:
 
-#### Create react app:
+#### Create react app in node:
 
         npx create-react-app .
 
