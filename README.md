@@ -35,5 +35,8 @@ Create index.html:
                           npm run deploy
 
 
+React with Bootstrap:
+
+https://react-bootstrap.github.io/components/alerts
 
 
