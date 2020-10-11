@@ -4,9 +4,13 @@
 
 #### Create react app in node:
 
-        npx create-react-app .
+  
+```
+npx create-react-app my-app
+cd my-app
+npm start
 
-        npm start
+```
 
 -Create a repository
 
