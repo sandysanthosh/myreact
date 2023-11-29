@@ -26,13 +26,6 @@ UX = Ux design refers to the term "User experience design"
 - Guarantess code stablity.
 - Support of Handy Tools.
 
-React has Two Components:
-
-- Functions Components
-- Class Components
-
-- Functions Components:
-
 JSX 
 ### Javascript:
 
@@ -110,10 +103,79 @@ root.render(
 
 <App/>
 
-# Component based Architecture in React.
+### Component based Architecture in React.
+
+Each compoenent has own structure.
+
+#### Build in piece
+
+#### module , managable  and expandable.
+
+
+#### React has Two Components:
+
+Component is the main building block of React Application.
+
+#### Two Types of Components:
+
+- Functions Components
+- Class Components
+
+- Class Components:
+
+#### emp.html:
+
+```
+<html>
+<body>
+<h1> Hi...</h1>
+</body>
+</html>
+```
+
+### First.js:
+
+```
+
+import React, {Component} from 'react'
+
+class First extends Component{
+
+render(){
+return <h1> Hello Class Based Components!!!</h1>
+}
+
+}
+
+
+export default First;
+
+```
+
+### Inject First.JS to app.js:
+
+### App.js
+
+### <First/> main code to add in APP() from other class this is class Bassed 
+
+```
+import logo from './logo.svg';
+import './App.css';
+import First from './components/First';
+
+function App() {
+  return (
+    <div className="App">
+     <First/>  
+    </div>
+  );
+}
+
+export default App;
 
 
 
+```
 
 
 
