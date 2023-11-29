@@ -51,11 +51,69 @@ JSX
 
 ### search in Terminal:
 
- -> node -- version
- -> npm  i css
- -> npm Version
- -> npm init react-app my-react-app
- -> cd my-react-app
- -> npm start
- -> npm audit fix --force
+ -  node -- version
+ -  npm  i css
+ -  npm Version
+ -  npm init react-app my-react-app
+ -  cd my-react-app
+ -  npm start
+ -  npm audit fix --force
+
+
+## Folder structure:
+
+#### Package.json:
+
+- Meta data details File
+- Script File
+- Configuration File
+- List of dependency File
+- Maintaned by NPM
+
+#### Package-log.Json:
+
+- Maintaned by NPM
+
+####  Node Module:
+
+- Maintanbed by NPM
+
+#### Public
+
+- It Contain asset of the project.
+
+#### Cloud Native Application:
+
+-  UI -> ReactJS
+-  Backend -> Microservices
+
+complete Code push to GITHub -> GIT -> CI/CD pipeline
+
+#### .gitIgnore: 
+
+- complete to Ignore the File and Folder
+
+#### Read.me: 
+
+- documentation of the project
+
+#### Helloworld using react:
+
+#### Index.js:
+
+root.render(
+<React.StrictMode>
+</React.StrictMode>
+);
+
+#### Index.js to APP.JS:
+
+<App/>
+
+# Component based Architecture in React.
+
+
+
+
+
 
