@@ -236,6 +236,85 @@ export default App;
 ```
 
 
+#### Example 5
+ 
+State using fuctional Component:
+
+since this keyword is not avaiable inside functional component we can manage state using this.
+
+reacthook is introduced 16.8 to manage state inside fucntional components
+
+JSX FunctionalComponents state react
+
+```
+
+    import { useState } from "react";
+
+    // JSX FunctionalComponents state react
+    const FucntionalComponents = () => 
+    {
+
+        const[name,setName] = useState('Guest 1')
+        const[age,setage] = useState('25')
+
+        const onClickHandler = () =>
+        {
+            setName('Srinibus')
+            setage('35')
+        }
+
+        return (
+
+           <div>
+                <h1>Guest Name {name}</h1>  
+                <h1>Guest Age {age}</h1>
+            <button onClick={onClickHandler}>press this!</button>
+            </div>
+        )
+    }
+
+
+    export default FucntionalComponents;
+
+```
+
+App.js:
+
+```
+
+import logo from './logo.svg';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import Navbar from './components/Navbar';
+import SidePanel from './components/SidePanel';
+import Footer from './components/Footer';
+import Props from './components/Props';
+import PersonNameDetails from './components/PersonNameDetails';
+import ClassCOmponent from './components/ClassCOmponent';
+import FucntionalComponents from './components/FucntionalComponents';
+
+
+function App() {
+  return (
+    <div className="App">
+
+
+<FucntionalComponents/>
+   
+    </div>
+  );
+}
+
+export default App;
+
+
+```
+
+
+
+
 
 
 
