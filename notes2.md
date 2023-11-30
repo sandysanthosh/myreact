@@ -153,3 +153,90 @@ export default PersonNameDetails;
 ```
 
 
+
+### Example 4:
+
+#### State using class Component:
+
+```
+
+import { Component } from "react";
+
+class ClassCOmponent extends Component{ 
+ // This is a State using class component
+  constructor(props)
+  {
+    super(props)
+
+    this.state= {
+        name : "Guest 1",
+        email : "Guest@gmail.com"
+    }
+  }
+
+  onClickHandler = () => {
+    this.setState({
+      name: 'srini',
+      email: 'srini@gmail.com'
+    });
+  }
+
+  offClickHandler = () => {
+    this.setState({
+      name: 'Guest',
+      email: 'Guest@gmail.com'
+    });
+  }
+
+  render(){
+    return (
+        <div>
+        <h1> HI {this.state.name},{this.state.email} </h1>
+        <button onClick={this.onClickHandler} >Login </button>
+        <button onClick={this.offClickHandler} >Logout </button>
+        </div>
+    )
+  
+  }
+
+}
+
+export default ClassCOmponent;
+
+```
+
+### App.js:
+
+```
+import logo from './logo.svg';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import Navbar from './components/Navbar';
+import SidePanel from './components/SidePanel';
+import Footer from './components/Footer';
+import Props from './components/Props';
+import PersonNameDetails from './components/PersonNameDetails';
+import ClassCOmponent from './components/ClassCOmponent';
+
+
+function App() {
+  return (
+    <div className="App">
+
+ <ClassCOmponent/>
+
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+
+
+
+
+
